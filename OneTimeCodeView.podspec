@@ -65,7 +65,7 @@ oneTimeCode UITextField for iOS (2FA, second factor)
   #
 
 
-  spec.platform     = :ios, "9.0"
+  spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -93,7 +93,7 @@ oneTimeCode UITextField for iOS (2FA, second factor)
 
   spec.source_files  = 'OneTimeCodeView/*.{h,m,swift}'
   spec.swift_version = '4.0'
-  spec.ios.deployment_target  = '9.0'
+  spec.ios.deployment_target  = '10.0'
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -133,6 +133,7 @@ oneTimeCode UITextField for iOS (2FA, second factor)
   #  you can include multiple dependencies to ensure it works.
 
   # spec.requires_arc = true
+  spec.ios.framework  = 'UIKit'
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
