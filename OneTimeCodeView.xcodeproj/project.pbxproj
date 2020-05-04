@@ -18,6 +18,10 @@
 		21ED2C882460909F00C5645D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21ED2C862460909F00C5645D /* LaunchScreen.storyboard */; };
 		21ED2C932460909F00C5645D /* OneTimeCodeViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED2C922460909F00C5645D /* OneTimeCodeViewExampleTests.swift */; };
 		21ED2C9E2460909F00C5645D /* OneTimeCodeViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED2C9D2460909F00C5645D /* OneTimeCodeViewExampleUITests.swift */; };
+		21ED2CAA2460923900C5645D /* OneTimeCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED2CA92460923900C5645D /* OneTimeCodeView.swift */; };
+		21ED2CAC24609BA000C5645D /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED2CAB24609BA000C5645D /* ExampleViewController.swift */; };
+		21ED2CAE24609BF300C5645D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21ED2CAD24609BF300C5645D /* Main.storyboard */; };
+		21ED2CB124609D8200C5645D /* OneTimeCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED2CA92460923900C5645D /* OneTimeCodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,9 @@
 		21ED2C992460909F00C5645D /* OneTimeCodeViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTimeCodeViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21ED2C9D2460909F00C5645D /* OneTimeCodeViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeViewExampleUITests.swift; sourceTree = "<group>"; };
 		21ED2C9F2460909F00C5645D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21ED2CA92460923900C5645D /* OneTimeCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeView.swift; sourceTree = "<group>"; };
+		21ED2CAB24609BA000C5645D /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		21ED2CAD24609BF300C5645D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +143,7 @@
 			children = (
 				21ED2C5E2460905800C5645D /* OneTimeCodeView.h */,
 				21ED2C5F2460905800C5645D /* Info.plist */,
+				21ED2CA92460923900C5645D /* OneTimeCodeView.swift */,
 			);
 			path = OneTimeCodeView;
 			sourceTree = "<group>";
@@ -157,6 +165,8 @@
 				21ED2C7F2460909C00C5645D /* ContentView.swift */,
 				21ED2C812460909F00C5645D /* Assets.xcassets */,
 				21ED2C862460909F00C5645D /* LaunchScreen.storyboard */,
+				21ED2CAD24609BF300C5645D /* Main.storyboard */,
+				21ED2CAB24609BA000C5645D /* ExampleViewController.swift */,
 				21ED2C892460909F00C5645D /* Info.plist */,
 				21ED2C832460909F00C5645D /* Preview Content */,
 			);
@@ -304,6 +314,7 @@
 				TargetAttributes = {
 					21ED2C5A2460905800C5645D = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					21ED2C632460905900C5645D = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -365,6 +376,7 @@
 				21ED2C882460909F00C5645D /* LaunchScreen.storyboard in Resources */,
 				21ED2C852460909F00C5645D /* Preview Assets.xcassets in Resources */,
 				21ED2C822460909F00C5645D /* Assets.xcassets in Resources */,
+				21ED2CAE24609BF300C5645D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21ED2CAA2460923900C5645D /* OneTimeCodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +418,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				21ED2C7C2460909C00C5645D /* AppDelegate.swift in Sources */,
+				21ED2CB124609D8200C5645D /* OneTimeCodeView.swift in Sources */,
+				21ED2CAC24609BA000C5645D /* ExampleViewController.swift in Sources */,
 				21ED2C7E2460909C00C5645D /* SceneDelegate.swift in Sources */,
 				21ED2C802460909C00C5645D /* ContentView.swift in Sources */,
 			);
@@ -581,6 +596,7 @@
 		21ED2C702460905900C5645D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U53K85TVT9;
@@ -597,6 +613,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nethergrim.OneTimeCodeView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,6 +622,7 @@
 		21ED2C712460905900C5645D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U53K85TVT9;
@@ -629,6 +647,7 @@
 		21ED2C732460905900C5645D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U53K85TVT9;
 				INFOPLIST_FILE = OneTimeCodeViewTests/Info.plist;
@@ -647,6 +666,7 @@
 		21ED2C742460905900C5645D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U53K85TVT9;
 				INFOPLIST_FILE = OneTimeCodeViewTests/Info.plist;
