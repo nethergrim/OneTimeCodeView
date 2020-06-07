@@ -2,7 +2,7 @@
 
 Simple iOS library written in swift, which provides a `UITextField` for `.oneTimeCode` with a great UX
 
-👨‍💻 iOS 10+ <3 CocoaPods
+👨‍💻 iOS 10+ <3 CocoaPods     
 🦸‍♂️ Automatically fills second-factor code from SMS     
 🧙‍♀️ Hidden cursor      
 🤳 Easy to use  
