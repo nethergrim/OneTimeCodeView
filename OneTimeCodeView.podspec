@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "OneTimeCodeView"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Simple iOS library written in swift, which provides a UITextField for .oneTimeCode with a great UX"
   spec.description      = <<-DESC
 This is a handy replacement for UITextField which should be used with .oneTimeCode (2FA, second factor)
@@ -19,10 +19,10 @@ Accessible from iOS 12
   spec.screenshots  = "https://github.com/nethergrim/OneTimeCodeView/blob/master/res/filled.png?raw=true", "https://github.com/nethergrim/OneTimeCodeView/blob/master/res/empty.png?raw=true"
   spec.license      = "MIT"
   spec.author             = { "Andrii Drobiazko" => "c2q9450@gmail.com" }
-  spec.platform     = :ios, "12.0"
+  spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/nethergrim/OneTimeCodeView.git", :tag => "#{spec.version}" }
   spec.source_files  = 'OneTimeCodeView/*.{h,m,swift}'
   spec.swift_version = '4.0'
-  spec.ios.deployment_target  = '12.0'
+  spec.ios.deployment_target  = '10.0'
   spec.ios.framework  = 'UIKit'
 end

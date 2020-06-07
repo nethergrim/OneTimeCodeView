@@ -28,7 +28,11 @@ class OneTimeCodeView: UITextField {
         tintColor = .clear
         textColor = .clear
         keyboardType = .numberPad
-        textContentType = .oneTimeCode
+         if #available(iOS 12.0, *) {
+                   textContentType = .oneTimeCode
+               } else {
+                   // Fallback on earlier versions
+               }
         addTarget(self, action: #selector(textChanged), for: .editingChanged)
         delegate = self
         let labelsStackView = createLabels(count: countOfDigits)
